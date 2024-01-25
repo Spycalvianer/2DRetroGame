@@ -9,10 +9,10 @@ public class ObjectMoveScript : MonoBehaviour
     public float timeToDestroy;
     private void Update()
     {
-        MoveClouds();
+        MoveObject();
         DestroySpawnedObject();
     }
-    public void MoveClouds()
+    public void MoveObject()
     {
         transform.position += transform.up * Time.deltaTime * movingSpeed;
     }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    BuildingScript building;
     PlayerInput playerInput;
     CGPBoundsScript boundScript;
     SpawnClouds objectSpawned;
@@ -12,7 +11,11 @@ public class GameManager : MonoBehaviour
     SpawnWaterBottle waterBottleSpawn;
     UIHeight height;
     public SpawnPool pool;
-    UIScore scoreUI;
+    UIUpdater updateUI;
+    MovingFloor movingFloor;
+    EnemySpawn enemySpawning;
+    PlayerData data;
+    SceneChangingScript sceneManager;
     private void Start()
     {
         playerInput = FindObjectOfType<PlayerInput>();
@@ -27,8 +30,13 @@ public class GameManager : MonoBehaviour
         height = FindObjectOfType<UIHeight>();
         height.makePoolAppear += pool.PoolSpawn;
         height.StartingPosition();
-        scoreUI = FindObjectOfType<UIScore>();
-        building = FindObjectOfType<BuildingScript>();
+        updateUI = FindObjectOfType<UIUpdater>();
+        movingFloor = FindObjectOfType<MovingFloor>();
+        enemySpawning = GetComponent<EnemySpawn>();
+        StartCoroutine(enemySpawning.TimeForSpawning());
+        data = FindObjectOfType<PlayerData>();
+        data.SetStartingHealth();
+        sceneManager = FindObjectOfType<SceneChangingScript>();
     }
     void Update()
     {
@@ -38,7 +46,9 @@ public class GameManager : MonoBehaviour
         height.HeightMeassure();
         height.ConditionToSpawnPool();
         height.UpdateFallingImage();
-        scoreUI.UpdateScoreText();
-        building.MoveBuilding();
+        updateUI.UpdateScoreText();
+        if(height.spawnPool) movingFloor.MoveFloor();
+        updateUI.UpdateHealthImage();
+        if (data.health <= 0) sceneManager.ChangeScene("LoseScene");
     }
 }

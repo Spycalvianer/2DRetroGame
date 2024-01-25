@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnAlcoholBottle : MonoBehaviour
 {
-    public GameObject cloudSpawned;
+    public GameObject ObjectToSpawn;
     private float timeBetweenSpawning;
     public IEnumerator TimerForSpawning()
     {
@@ -17,6 +17,6 @@ public class SpawnAlcoholBottle : MonoBehaviour
     }
     public void Instantiatebottles()
     {
-        Instantiate(cloudSpawned, new Vector3(Random.Range(-10, 10), Random.Range(-9, -13), 0), Quaternion.identity);
+        Instantiate(ObjectToSpawn, new Vector3(Random.Range(-10, 10), Random.Range(-9, -13), 0), Quaternion.identity);
     }
 }
