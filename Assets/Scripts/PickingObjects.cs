@@ -5,7 +5,7 @@ using System;
 
 public class PickingObjects : MonoBehaviour
 {
-    public ScriptableObjects bottleScore;
+    public PickableObjects bottleScore;
     PlayerData playerDayta;
     private void OnTriggerEnter2D(Collider2D collision)
     {

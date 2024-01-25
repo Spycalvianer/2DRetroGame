@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8913789446670178331}
   - component: {fileID: -4064459301676056811}
+  - component: {fileID: -684133917009143469}
   m_Layer: 0
   m_Name: Cloud
   m_TagString: Cloud
@@ -110,12 +111,12 @@ Transform:
   m_GameObject: {fileID: 8920947805943384093}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.4504286, y: 684.6575, z: -0.27491057}
-  m_LocalScale: {x: 1.7655131, y: 0.8011874, z: 1}
+  m_LocalScale: {x: 0.6495645, y: 1.3652624, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3005225344200476572}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-4064459301676056811
 MonoBehaviour:
@@ -129,5 +130,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc07a4b2a9f33b742970e3ac80132c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingSpeed: 10
+  movingSpeed: 5
   timeToDestroy: 3
+--- !u!114 &-684133917009143469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920947805943384093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7508f9bf1a71e4191b088e50861580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelPrefs: {fileID: 11400000, guid: 9cd9922e1e13237409cba3fbe944ee7d, type: 2}

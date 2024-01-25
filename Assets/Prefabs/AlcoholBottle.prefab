@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8944260220760806443}
   - component: {fileID: 2554970455643916662}
   - component: {fileID: 2638317399988995295}
+  - component: {fileID: 2184360712664694347}
   m_Layer: 0
   m_Name: AlcoholBottle
   m_TagString: Untagged
@@ -107,6 +108,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottleScore: {fileID: 11400000, guid: 8b77e7f714b8920478924b9f27d5c363, type: 2}
+--- !u!114 &2184360712664694347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073280769258316981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7508f9bf1a71e4191b088e50861580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelPrefs: {fileID: 11400000, guid: 9cd9922e1e13237409cba3fbe944ee7d, type: 2}
 --- !u!1 &3846093394076074786
 GameObject:
   m_ObjectHideFlags: 0
