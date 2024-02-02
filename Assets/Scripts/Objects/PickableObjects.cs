@@ -7,4 +7,5 @@ public class PickableObjects : ScriptableObject
 {
     public float damagePoints;
     public float gainedPoints;
+    public float healthPoints;
 }

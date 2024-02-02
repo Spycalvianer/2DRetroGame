@@ -11,8 +11,15 @@ public class PlayerData : MonoBehaviour
     {
         health = maxHealth;
     }
-    public void UpdateHealth(int damage)
+    public void UpdateHealth(float damage)
     {
-        health -= damage;
+        if (health <= maxHealth)
+        {
+            health -= damage;
+        }
+        else if ( health > maxHealth)
+        {
+            health = maxHealth;
+        }
     }
 }

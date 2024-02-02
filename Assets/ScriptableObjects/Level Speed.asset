@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43094bd3f5ca67e42a25faec212564eb, type: 3}
   m_Name: Level Speed
   m_EditorClassIdentifier: 
-  speedFactor: 1
+  speedFactor: 1.5

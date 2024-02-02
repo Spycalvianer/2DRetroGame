@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     SceneChangingScript sceneManager;
     private void Start()
     {
+        Time.timeScale = 1f;
         playerInput = FindObjectOfType<PlayerInput>();
         boundScript = FindObjectOfType<CGPBoundsScript>();
         boundScript.GetCameraBounds();
@@ -41,6 +42,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         playerInput.GetInput();
+        playerInput.OpenPauseMenu();
+        playerInput.TimescaleController();
         playerInput.Movement();
         boundScript.ApplyBounds();
         height.HeightMeassure();
@@ -49,6 +52,6 @@ public class GameManager : MonoBehaviour
         updateUI.UpdateScoreText();
         if(height.spawnPool) movingFloor.MoveFloor();
         updateUI.UpdateHealthImage();
-        if (data.health <= 0) sceneManager.ChangeScene("LoseScene");
+        if (data.health <= 0) sceneManager.LoadSpecificScene("LoseScene");
     }
 }

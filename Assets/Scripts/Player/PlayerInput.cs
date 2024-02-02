@@ -15,6 +15,7 @@ public class PlayerInput : MonoBehaviour
     Vector2 viewportMax;
 
     Camera mainCamera;
+    [SerializeField] GameObject pausePanel;
     public void GetInput()
     {
         xAxis = Input.GetAxis("Horizontal");
@@ -25,6 +26,21 @@ public class PlayerInput : MonoBehaviour
     {
         movementVector = new Vector3(xAxis * horizontalMoveSpeed, yAxis * verticalMoveSpeed, 0);
         playerGO.transform.position += movementVector * Time.deltaTime;
+    }
+    public void OpenPauseMenu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pausePanel.SetActive(!pausePanel.activeSelf);
+        }
+    }
+    public void TimescaleController()
+    {
+        if (pausePanel.activeSelf == true)
+        {
+            Time.timeScale = 0;
+        }
+        else Time.timeScale = 1f;
     }
     public void CalculateBounds()
     {

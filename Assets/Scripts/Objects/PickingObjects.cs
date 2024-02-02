@@ -13,6 +13,7 @@ public class PickingObjects : MonoBehaviour
         {
             playerDayta = collision.GetComponent<PlayerData>();
             playerDayta.score += bottleScore.gainedPoints - bottleScore.damagePoints;
+            playerDayta.UpdateHealth(-bottleScore.healthPoints);
             Destroy(gameObject);
         }
     }

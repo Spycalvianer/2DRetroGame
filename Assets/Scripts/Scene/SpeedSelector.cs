@@ -15,7 +15,7 @@ public class SpeedSelector : MonoBehaviour
 
             if (movingEnemy != null)
             {
-                movingEnemy.movingSpeed += SceneManager.GetActiveScene().buildIndex + 1;
+                movingEnemy.movingSpeed += (SceneManager.GetActiveScene().buildIndex + 1) * levelPrefs.speedFactor;
             }
             else if (movingObject != null)
             {

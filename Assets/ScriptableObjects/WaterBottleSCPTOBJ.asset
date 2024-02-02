@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePoints: 5
   gainedPoints: 0
+  healthPoints: 10

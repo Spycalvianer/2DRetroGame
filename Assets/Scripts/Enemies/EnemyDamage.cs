@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     PlayerData data;
-    public int damage;
+    public float damage;
     [SerializeField] GameObject crashObjet;
     private void OnTriggerEnter2D(Collider2D collision)
     {
