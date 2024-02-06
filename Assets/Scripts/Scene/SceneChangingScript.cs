@@ -6,7 +6,15 @@ using UnityEngine.SceneManagement;
 public class SceneChangingScript : MonoBehaviour
 {
     public string sceneName;
-    
+    [SerializeField] GameObject panelToDeactivate;
+    private void Start()
+    {
+        if(panelToDeactivate != null)
+        {
+            panelToDeactivate.SetActive(false);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")

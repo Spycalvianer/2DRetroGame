@@ -935,7 +935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4468967526723215839, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.22
+      value: -11.35
       objectReference: {fileID: 0}
     - target: {fileID: 4468967526723215839, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_LocalPosition.y
@@ -972,6 +972,22 @@ PrefabInstance:
     - target: {fileID: 4468967526723215839, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129895959160699534, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dc4e1c9834f9a34aa777c2a120a7199, type: 3}
+    - target: {fileID: 6129895959160699534, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129895959160699534, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129895959160699534, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5568628
       objectReference: {fileID: 0}
     - target: {fileID: 8120021480546974473, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_Name
@@ -1192,7 +1208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994710248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -357.28, y: -136.24, z: 0}
+  m_LocalPosition: {x: -377.93546, y: -136.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1383,7 +1399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069535323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -357.26456, y: -162.4, z: -0.122592404}
+  m_LocalPosition: {x: -377.92, y: -162.4, z: -0.122592404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1401,7 +1417,7 @@ GameObject:
   - component: {fileID: 1188351487}
   - component: {fileID: 1188351486}
   m_Layer: 0
-  m_Name: Tokyo
+  m_Name: IslandBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1448,7 +1464,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300000, guid: 1365cb2eedc8cb94b9ed7074605a390d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 449558778cab3304584a57ec810174fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1468,7 +1484,7 @@ Transform:
   m_GameObject: {fileID: 1188351485}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -366.5245, y: -141.2093, z: 0.00439805}
-  m_LocalScale: {x: 3.7239578, y: 2.4459908, z: 1}
+  m_LocalScale: {x: 2.299915, y: 1.7865562, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 196699171}
@@ -2712,7 +2728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4468967526723215839, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.22
+      value: -11.41
       objectReference: {fileID: 0}
     - target: {fileID: 4468967526723215839, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2758,6 +2774,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 1069535324}
+    - target: {fileID: 6129895959160699534, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dc4e1c9834f9a34aa777c2a120a7199, type: 3}
     - target: {fileID: 8120021480546974473, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_Name
       value: TokyoBuildingParent

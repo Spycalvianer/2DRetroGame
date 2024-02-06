@@ -121,6 +121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelPrefs: {fileID: 11400000, guid: 9cd9922e1e13237409cba3fbe944ee7d, type: 2}
+  additionalSpeed: 0
+  movingEnemy: {fileID: 0}
+  movingObject: {fileID: 5597342316516332276}
 --- !u!1 &7218259553975784056
 GameObject:
   m_ObjectHideFlags: 0

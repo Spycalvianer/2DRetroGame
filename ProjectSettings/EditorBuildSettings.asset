@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Moon Level.unity
+    guid: 46238bf61e2930642b1c0bcebf54a310
+  - enabled: 1
     path: Assets/Scenes/MainMenuScene.unity
     guid: 825c3c78af61ecf40b48c516fb8a6f71
   - enabled: 1
@@ -14,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TokioLevel.unity
     guid: 1bc3c96c06be26f4d8c46e313a5c0b6f
+  - enabled: 1
+    path: Assets/Scenes/E.IslandLevel.unity
+    guid: 8dadc230f9505334ba5a3253a3c84082
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: cc78fd87f211a274882518952a786167

@@ -5,21 +5,21 @@ using UnityEngine.SceneManagement;
 public class SpeedSelector : MonoBehaviour
 {
     public LevelPreferences levelPrefs;
-    EnemyMove movingEnemy;
-    ObjectMoveScript movingObject;
+    [SerializeField] float additionalSpeed;
+    [SerializeField] EnemyMove movingEnemy;
+    [SerializeField] ObjectMoveScript movingObject;
 
     private void Start()
     {
-        movingEnemy = GetComponent<EnemyMove>();
         movingObject = GetComponent<ObjectMoveScript>();
-
-            if (movingEnemy != null)
-            {
-                movingEnemy.movingSpeed += (SceneManager.GetActiveScene().buildIndex + 1) * levelPrefs.speedFactor;
-            }
-            else if (movingObject != null)
-            {
-                movingObject.movingSpeed += SceneManager.GetActiveScene().buildIndex - 0.5f;
-            }
+        movingEnemy=GetComponent<EnemyMove>();
+        if (movingEnemy != null)
+        {
+            movingEnemy.movingSpeed = 5f + (SceneManager.GetActiveScene().buildIndex + 1) * levelPrefs.speedFactor;
+        }
+        else if (movingObject != null)
+        {
+            movingObject.movingSpeed = 5f + SceneManager.GetActiveScene().buildIndex - 0.5f;
+        }
     }
 }

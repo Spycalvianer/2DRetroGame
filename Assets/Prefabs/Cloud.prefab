@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8913789446670178331}
   - component: {fileID: -4064459301676056811}
-  - component: {fileID: -684133917009143469}
+  - component: {fileID: 1788221898856846655}
   m_Layer: 0
   m_Name: Cloud
   m_TagString: Cloud
@@ -111,12 +111,12 @@ Transform:
   m_GameObject: {fileID: 8920947805943384093}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.4504286, y: 684.6575, z: -0.27491057}
-  m_LocalScale: {x: 1.0804572, y: 0.31729403, z: 1}
+  m_LocalScale: {x: 1.8446684, y: 1.2497531, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3005225344200476572}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-4064459301676056811
 MonoBehaviour:
@@ -131,8 +131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingSpeed: 5
-  timeToDestroy: 3
---- !u!114 &-684133917009143469
+  timeToDestroy: 4
+--- !u!114 &1788221898856846655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,3 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelPrefs: {fileID: 11400000, guid: 9cd9922e1e13237409cba3fbe944ee7d, type: 2}
+  additionalSpeed: 2
+  movingEnemy: {fileID: -3727646800089256245, guid: 7696a9856a5c144498716fd3c25ecb16, type: 3}
+  movingObject: {fileID: -4064459301676056811}

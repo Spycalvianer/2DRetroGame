@@ -16,7 +16,10 @@ public class SpawnClouds : MonoBehaviour
     }
     public void InstantiateClouds()
     {
-        Instantiate(cloudSpawned, new Vector3(Random.Range(-10, 10), Random.Range(-9, -13), 0), Quaternion.identity);
-        cloudSpawned.transform.localScale = new Vector3(Random.Range(0.1f, 2), Random.Range(0.1f, 1.5f), 1);
+        if (cloudSpawned != null)
+        {
+            Instantiate(cloudSpawned, new Vector3(Random.Range(-10, 10), Random.Range(-9, -13), 0), Quaternion.identity);
+            cloudSpawned.transform.localScale = new Vector3(Random.Range(0.1f, 2), Random.Range(0.1f, 1.5f), 1);
+        }
     }
 }

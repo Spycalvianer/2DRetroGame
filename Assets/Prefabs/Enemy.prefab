@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a819847919446945925947fae83ef18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingSpeed: 5
+  movingSpeed: 7
   timeToDestroy: 5
 --- !u!114 &1464813352042178372
 MonoBehaviour:
@@ -145,6 +145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelPrefs: {fileID: 11400000, guid: 9cd9922e1e13237409cba3fbe944ee7d, type: 2}
+  additionalSpeed: 0
+  movingEnemy: {fileID: 0}
+  movingObject: {fileID: 0}
 --- !u!1 &2589160446810429521
 GameObject:
   m_ObjectHideFlags: 0
