@@ -5,6 +5,7 @@ using UnityEngine;
 public class SplashScript : MonoBehaviour
 {
     [SerializeField] GameObject winPanel;
+    [SerializeField] GameManager gameManager;
     Canvas sceneCanvas;
 
     public void ActivateWinPanel()

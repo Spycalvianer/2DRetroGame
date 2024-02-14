@@ -9,11 +9,14 @@ public class SceneChangingScript : MonoBehaviour
     [SerializeField] GameObject[] panelToDeactivate;
     private void Start()
     {
-        for(int i = 0; i < panelToDeactivate.Length; i++)
+        if(SceneManager.GetActiveScene().buildIndex == 0)
         {
-            if (panelToDeactivate != null)
+            for (int i = 0; i < panelToDeactivate.Length; i++)
             {
-                panelToDeactivate[i].SetActive(false);
+                if (panelToDeactivate != null)
+                {
+                    panelToDeactivate[i].SetActive(false);
+                }
             }
         }
     }

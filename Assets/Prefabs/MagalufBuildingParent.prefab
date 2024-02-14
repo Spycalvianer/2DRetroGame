@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58180c43794870243a31d294983deecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingMovingSpeed: 2
+  buildingMovingSpeed: 4
   target: {fileID: 0}
   spawner: {fileID: 0}
 --- !u!1 &4706131931381827176
