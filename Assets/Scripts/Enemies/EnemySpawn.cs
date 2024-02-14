@@ -33,11 +33,13 @@ public class EnemySpawn : MonoBehaviour
     }
     void InstantiateEnemies()
     {
-        DefineAreaToSpawn();
-        SelectAreaToSpawn();
-        if (arearSelector == 1) enemy.transform.localScale = new Vector3(-1, 1, 1);
-        else if (arearSelector == 2) enemy.transform.localScale = new Vector3(1, 1, 1);
-        Instantiate(enemy, areaToSpawn, Quaternion.identity);
-
+        if(enemy != null)
+        {
+            DefineAreaToSpawn();
+            SelectAreaToSpawn();
+            if (arearSelector == 1) enemy.transform.localScale = new Vector3(-1, 1, 1);
+            else if (arearSelector == 2) enemy.transform.localScale = new Vector3(1, 1, 1);
+            Instantiate(enemy, areaToSpawn, Quaternion.identity);
+        }
     }
 }

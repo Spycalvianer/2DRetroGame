@@ -17,6 +17,9 @@ public class SpawnWaterBottle : MonoBehaviour
     }
     public void Instantiatebottles()
     {
-        Instantiate(ObjectToSpawn, new Vector3(Random.Range(-10, 10), Random.Range(-9, -13), 0), Quaternion.identity);
+        if(ObjectToSpawn != null)
+        {
+            Instantiate(ObjectToSpawn, new Vector3(Random.Range(-10, 10), Random.Range(-9, -13), 0), Quaternion.identity);
+        }
     }
 }

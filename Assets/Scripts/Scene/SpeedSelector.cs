@@ -8,18 +8,35 @@ public class SpeedSelector : MonoBehaviour
     [SerializeField] float additionalSpeed;
     [SerializeField] EnemyMove movingEnemy;
     [SerializeField] ObjectMoveScript movingObject;
+    int buildIndex;
 
     private void Start()
     {
+        buildIndex = SceneManager.GetActiveScene().buildIndex;
         movingObject = GetComponent<ObjectMoveScript>();
         movingEnemy=GetComponent<EnemyMove>();
-        if (movingEnemy != null)
+        if(buildIndex != 1)
         {
-            movingEnemy.movingSpeed = 5f + (SceneManager.GetActiveScene().buildIndex);
+            if (movingEnemy != null)
+            {
+                movingEnemy.movingSpeed = 5f + (SceneManager.GetActiveScene().buildIndex);
+                movingEnemy.timeToDestroy = 5f;
+            }
+            else if (movingObject != null)
+            {
+                movingObject.movingSpeed = 5f + (SceneManager.GetActiveScene().buildIndex);
+                movingObject.timeToDestroy = 5f;
+            }
+        }
+        else if (movingEnemy != null)
+        {
+            movingEnemy.movingSpeed = 2f + (SceneManager.GetActiveScene().buildIndex);
+            movingEnemy.timeToDestroy += SceneManager.GetActiveScene().buildIndex;
         }
         else if (movingObject != null)
         {
-            movingObject.movingSpeed = 5f + (SceneManager.GetActiveScene().buildIndex);
+            movingObject.movingSpeed = 2f + (SceneManager.GetActiveScene().buildIndex);
+            movingObject.timeToDestroy += SceneManager.GetActiveScene().buildIndex;
         }
     }
 }
