@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 public class SceneChangingScript : MonoBehaviour
 {
     public string sceneName;
-    [SerializeField] GameObject panelToDeactivate;
+    [SerializeField] GameObject[] panelToDeactivate;
     private void Start()
     {
-        if(panelToDeactivate != null)
+        for(int i = 0; i < panelToDeactivate.Length; i++)
         {
-            panelToDeactivate.SetActive(false);
+            if (panelToDeactivate != null)
+            {
+                panelToDeactivate[i].SetActive(false);
+            }
         }
     }
 
