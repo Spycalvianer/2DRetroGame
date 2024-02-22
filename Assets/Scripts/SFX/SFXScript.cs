@@ -4,24 +4,9 @@ using UnityEngine;
 
 public class SFXScript : MonoBehaviour
 {
-    public AudioSource crashSound;
-    public AudioSource poolLanding;
-    public AudioSource waterBottle;
-    public AudioSource beerCan;
-    public void CrashSound()
+    [SerializeField] AudioSource sfx;
+    public void PlayAudio()
     {
-        crashSound.Play();
-    }
-    public void PoolLandingSound()
-    {
-        poolLanding.Play();
-    }
-    public void GrabWaterBottle()
-    {
-        waterBottle.Play();
-    }
-    public void GrabBeerCan()
-    {
-        beerCan.Play();
+        sfx.Play();
     }
 }

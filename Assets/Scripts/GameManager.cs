@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
     MovingFloor movingFloor;
     EnemySpawn enemySpawning;
     PlayerData data;
-    SceneChangingScript sceneManager;
     private void Start()
     {
         Time.timeScale = 1f;
@@ -37,7 +36,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(enemySpawning.TimeForSpawning());
         data = FindObjectOfType<PlayerData>();
         data.SetStartingHealth();
-        sceneManager = FindObjectOfType<SceneChangingScript>();
     }
     void Update()
     {
@@ -52,6 +50,5 @@ public class GameManager : MonoBehaviour
         updateUI.UpdateScoreText();
         if(height.spawnPool) movingFloor.MoveFloor();
         updateUI.UpdateHealthImage();
-        if (data.health <= 0) sceneManager.LoadSpecificScene("LoseScene");
     }
 }
