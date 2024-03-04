@@ -28,7 +28,7 @@ public class PlayerLoses : MonoBehaviour
             objects = FindObjectsOfType<ObjectMoveScript>();
             enemies = FindObjectsOfType<EnemyMove>();
             music = GameObject.Find("Music");
-            music.SetActive(false);
+            if(music != null) music.SetActive(false);
             for (int i = 0; i < buildings.Length; i++)
             {
                 buildings[i].buildingMovingSpeed = 0;
@@ -41,8 +41,11 @@ public class PlayerLoses : MonoBehaviour
             {
                 enemies[i].movingSpeed = 0;
             }
-            gameObject.SetActive(false);
-            gameManager.gameObject.SetActive(false);
+            if (gameManager != null)
+            {
+                gameObject.SetActive(false);
+                gameManager.gameObject.SetActive(false);
+            }
         }
     }
 }

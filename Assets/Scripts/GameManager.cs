@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     PlayerData data;
     private void Start()
     {
-        Time.timeScale = 1f;
         playerInput = FindObjectOfType<PlayerInput>();
         boundScript = FindObjectOfType<CGPBoundsScript>();
         boundScript.GetCameraBounds();
