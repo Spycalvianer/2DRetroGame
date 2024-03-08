@@ -1311,8 +1311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerGO: {fileID: 361073212}
   canvas: {fileID: 1921586637}
-  horizontalMoveSpeed: 5
-  verticalMoveSpeed: 3
+  horizontalMoveSpeed: 6
+  verticalMoveSpeed: 4
   pausePanel: {fileID: 1334790098}
 --- !u!4 &361073223
 Transform:
@@ -1322,7 +1322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361073212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.35, z: 0}
+  m_LocalPosition: {x: 0, y: 2.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1349,7 +1349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 361073217}
-  gamemanager: {fileID: 0}
+  gamemanager: {fileID: 1942499669}
   buildings: []
   music: {fileID: 1949339250}
   balconyMoving: {fileID: 1723624621}
@@ -1529,8 +1529,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.866228}
   m_AnchorMax: {x: 0.18764155, y: 1}
-  m_AnchoredPosition: {x: 357.76, y: 0}
-  m_SizeDelta: {x: 715.53, y: 334.37}
+  m_AnchoredPosition: {x: 357.76, y: -166.0925}
+  m_SizeDelta: {x: 715.53, y: 332.185}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &550663259
 GameObject:
@@ -1941,8 +1941,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.656, y: 0.77800006}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -288.76996, y: 0}
-  m_SizeDelta: {x: 577.54, y: 300.31}
+  m_AnchoredPosition: {x: -288.76996, y: -150.0775}
+  m_SizeDelta: {x: 577.54, y: 300.155}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &831656311
 GameObject:

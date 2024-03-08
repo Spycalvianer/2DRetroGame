@@ -14,7 +14,7 @@ public class SceneStart : MonoBehaviour
         Time.timeScale = 1;
         if(balconyMoving != null) balconyMoving.enabled = false;
         gamemanager = GameObject.Find("GameManager");
-        gamemanager.SetActive(false);
+        if(gamemanager != null) gamemanager.SetActive(false);
         LevelStart();
         buildings = FindObjectsOfType<BuildingScript>();
         
