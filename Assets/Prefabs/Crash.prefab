@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8414150032629272408}
   - component: {fileID: 9077858188973459403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CrashF2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8841653409950491341}
   - component: {fileID: 4085545892462673875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CrashF3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 3563494101940974179}
   - component: {fileID: 2024084751504288247}
   - component: {fileID: 6586737577120377647}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Crash
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6628011062484034534}
   - component: {fileID: -7718966958538593605}
   - component: {fileID: 7569248402361257864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WaterBottle
   m_TagString: Water
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 768299530125881752}
   - component: {fileID: 2723785261935396688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

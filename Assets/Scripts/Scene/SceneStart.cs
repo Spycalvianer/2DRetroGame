@@ -8,9 +8,13 @@ public class SceneStart : MonoBehaviour
     [SerializeField] GameObject gamemanager;
     [SerializeField] BuildingScript[] buildings;
     [SerializeField] AudioSource music;
+    [SerializeField] ObjectMoveScript balconyMoving;
     void Start()
     {
         Time.timeScale = 1;
+        if(balconyMoving != null) balconyMoving.enabled = false;
+        gamemanager = GameObject.Find("GameManager");
+        gamemanager.SetActive(false);
         LevelStart();
         buildings = FindObjectsOfType<BuildingScript>();
         
@@ -29,16 +33,16 @@ public class SceneStart : MonoBehaviour
         if (jumpInpput)
         {
             playerAnimator.SetTrigger("Jump");
+            gamemanager.SetActive(true);
         }
     }
     void LevelStart()
     {
-        if(gamemanager != null) gamemanager.SetActive(false);
         if(music != null) music.Stop();
     }
     public void StartMovingGame()
     {
-        gamemanager.SetActive(true);
+        balconyMoving.enabled=true;
 
         for (int i = 0; i < buildings.Length; i++)
         {

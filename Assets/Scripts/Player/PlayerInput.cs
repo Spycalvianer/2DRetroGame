@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     public GameObject playerGO;
+    public GameObject canvas;
     float xAxis;
     float yAxis;
     public float horizontalMoveSpeed;

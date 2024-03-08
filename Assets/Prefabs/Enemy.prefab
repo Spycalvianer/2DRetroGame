@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1604839420297674565}
   - component: {fileID: 3426237258903941713}
   - component: {fileID: -983160213765553388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 641533707334365132}
   - component: {fileID: 6232488725536987127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GaviotaF2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4292629738547052178}
   - component: {fileID: 1666218929118879035}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gaviota
   m_TagString: Untagged
   m_Icon: {fileID: 0}

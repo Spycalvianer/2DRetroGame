@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8240594777126990252}
   - component: {fileID: 5882297166888249369}
   - component: {fileID: 1367187601007407183}
-  - component: {fileID: 8120123440252596860}
   - component: {fileID: 3446656178546075052}
+  - component: {fileID: 1675414336104861684}
+  - component: {fileID: 32239668483462657}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5882297166888249369
 SpriteRenderer:
@@ -132,19 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.2, y: 3.66}
   m_EdgeRadius: 0
---- !u!114 &8120123440252596860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5996328923140480436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8b7bb79035e27242b0530c6acdda8aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: LoseScene
 --- !u!114 &3446656178546075052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,3 +146,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingSpeedUpwards: 5
+--- !u!114 &1675414336104861684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996328923140480436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a19b144cf31cf94293d859747108f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winPanel: {fileID: 6067828964293187663, guid: 28ae3710fd3d0ee4eb8610b79e6a35e6, type: 3}
+  gameManager: {fileID: 0}
+--- !u!114 &32239668483462657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996328923140480436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db81a420898aae48b10ce399de3a973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splashObject: {fileID: 0}
+  floor: {fileID: 0}

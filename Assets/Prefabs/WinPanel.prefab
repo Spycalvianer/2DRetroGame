@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8120123440252596860, guid: 878ecb6a42af2814b9d5f3cb12845ac9, type: 3}
+      - m_Target: {fileID: 8987110859085299064, guid: 892d891b4106cde4e923e5fab989828b, type: 3}
         m_TargetAssemblyTypeName: SceneChangingScript, Assembly-CSharp
         m_MethodName: NextScene
         m_Mode: 1
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8120123440252596860, guid: 878ecb6a42af2814b9d5f3cb12845ac9, type: 3}
+      - m_Target: {fileID: 8987110859085299064, guid: 892d891b4106cde4e923e5fab989828b, type: 3}
         m_TargetAssemblyTypeName: SceneChangingScript, Assembly-CSharp
         m_MethodName: LoadSpecificScene
         m_Mode: 5

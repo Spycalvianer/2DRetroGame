@@ -8,7 +8,7 @@ public class StopGameMusic : MonoBehaviour
 
     public void StopMusic()
     {
-        gameplayyMusic = FindObjectOfType<SFXScript>().gameObject;
+        gameplayyMusic = GameObject.Find("Music");
         gameplayyMusic.SetActive(false);
     }
 }

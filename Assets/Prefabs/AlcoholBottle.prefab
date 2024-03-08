@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2638317399988995295}
   - component: {fileID: 2184360712664694347}
   - component: {fileID: -3275708411843654052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AlcoholBottle
   m_TagString: Beer
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8520313776091098824}
   - component: {fileID: 5754814742860163440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

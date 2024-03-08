@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(enemySpawning.TimeForSpawning());
         data = FindObjectOfType<PlayerData>();
         data.SetStartingHealth();
+        
     }
     void Update()
     {

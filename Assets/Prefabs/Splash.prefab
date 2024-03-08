@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8182955135236306449}
   - component: {fileID: 8447919362247989945}
   - component: {fileID: 8669494997262184097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Splash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6555605142943858542}
   - component: {fileID: 971349077759947657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Splash3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1650055768787401986}
   - component: {fileID: 1320636566587485820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Splash1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8270051611123866844}
   - component: {fileID: 8120554585283216013}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Splash4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5914180446212464739}
   - component: {fileID: 2827286588346031614}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Splash2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
