@@ -109,6 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottleScore: {fileID: 11400000, guid: 9f0a09db9d3c99a479edd12c8b2318c0, type: 2}
+  scoreMultiplier: 2
 --- !u!114 &-7718966958538593605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelPrefs: {fileID: 11400000, guid: 9cd9922e1e13237409cba3fbe944ee7d, type: 2}
-  additionalSpeed: 0
   movingEnemy: {fileID: 0}
   movingObject: {fileID: 5597342316516332276}
 --- !u!82 &7569248402361257864

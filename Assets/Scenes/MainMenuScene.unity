@@ -221,7 +221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &103881357
 RectTransform:
   m_ObjectHideFlags: 0
@@ -235,10 +235,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 355472610}
-  - {fileID: 390165546}
-  - {fileID: 423329788}
-  - {fileID: 1216207402}
-  - {fileID: 149436687}
   - {fileID: 2127230508}
   - {fileID: 1553457002}
   - {fileID: 1140066460}
@@ -396,13 +392,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 103881357}
+  m_Father: {fileID: 353254525}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7502717, y: 0.55200005}
   m_AnchorMax: {x: 0.93254334, y: 0.6324094}
-  m_AnchoredPosition: {x: -1.2999878, y: 0}
-  m_SizeDelta: {x: 0, y: -1}
+  m_AnchoredPosition: {x: -44.943787, y: -89.96512}
+  m_SizeDelta: {x: 138.37834, y: 21.980827}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149436688
 MonoBehaviour:
@@ -434,7 +430,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Enemy
@@ -635,6 +631,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1958446628}
+  - {fileID: 149436687}
   m_Father: {fileID: 103881357}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -922,13 +919,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 103881357}
+  m_Father: {fileID: 1553457002}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.06840755, y: 0.55200005}
   m_AnchorMax: {x: 0.2501849, y: 0.6324094}
-  m_AnchoredPosition: {x: -0.5, y: 0}
-  m_SizeDelta: {x: 1, y: -1}
+  m_AnchoredPosition: {x: 45.274048, y: -89.96506}
+  m_SizeDelta: {x: 139.03867, y: 21.980827}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &390165547
 MonoBehaviour:
@@ -960,7 +957,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Arrows/WASD Keys
@@ -1082,13 +1079,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 103881357}
+  m_Father: {fileID: 1140066460}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29327172, y: 0.55200005}
   m_AnchorMax: {x: 0.48059246, y: 0.6324094}
-  m_AnchoredPosition: {x: 0.3999939, y: 0}
-  m_SizeDelta: {x: -5, y: -1}
+  m_AnchoredPosition: {x: 15.262512, y: -89.96512}
+  m_SizeDelta: {x: 137.24821, y: 21.980827}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &423329789
 MonoBehaviour:
@@ -1120,7 +1117,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Beer Can
@@ -1975,7 +1972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &909330723
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2318,6 +2315,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2115225717}
+  - {fileID: 423329788}
   m_Father: {fileID: 103881357}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2550,6 +2548,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 750200648}
+  - {fileID: 1216207402}
   m_Father: {fileID: 103881357}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2703,13 +2702,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 103881357}
+  m_Father: {fileID: 1211232602}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.524815, y: 0.55200005}
   m_AnchorMax: {x: 0.7103584, y: 0.6324094}
-  m_AnchoredPosition: {x: -0.7000122, y: 0}
-  m_SizeDelta: {x: -3, y: -1}
+  m_AnchoredPosition: {x: -13.772278, y: -89.96509}
+  m_SizeDelta: {x: 137.89853, y: 21.980827}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1216207403
 MonoBehaviour:
@@ -2741,7 +2740,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Water Bottle
@@ -3756,6 +3755,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 894610160}
+  - {fileID: 390165546}
   m_Father: {fileID: 103881357}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3944,6 +3944,7 @@ MonoBehaviour:
   gamemanager: {fileID: 0}
   buildings: []
   music: {fileID: 0}
+  balconyMoving: {fileID: 0}
 --- !u!1 &1635018758
 GameObject:
   m_ObjectHideFlags: 0

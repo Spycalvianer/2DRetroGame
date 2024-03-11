@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splashObject: {fileID: 3470648285897528123, guid: 981a50bdbd7e3f84d8d529423dec4001, type: 3}
+  floor: {fileID: 3446656178546075052, guid: 878ecb6a42af2814b9d5f3cb12845ac9, type: 3}

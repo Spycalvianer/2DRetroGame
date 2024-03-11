@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 16bfa0ec67695af478400c710ad9a397, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 15a87c1eb659b2943975a220210cd34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
@@ -111,12 +111,12 @@ Transform:
   m_GameObject: {fileID: 8920947805943384093}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.4504286, y: 684.6575, z: -0.27491057}
-  m_LocalScale: {x: 0.3544633, y: 1.4412079, z: 1}
+  m_LocalScale: {x: 1.8073239, y: 1.3616893, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3005225344200476572}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-4064459301676056811
 MonoBehaviour:
@@ -145,6 +145,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelPrefs: {fileID: 11400000, guid: 9cd9922e1e13237409cba3fbe944ee7d, type: 2}
-  additionalSpeed: 2
   movingEnemy: {fileID: -3727646800089256245, guid: 7696a9856a5c144498716fd3c25ecb16, type: 3}
   movingObject: {fileID: -4064459301676056811}

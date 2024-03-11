@@ -172,5 +172,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db81a420898aae48b10ce399de3a973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splashObject: {fileID: 0}
-  floor: {fileID: 0}
+  splashObject: {fileID: 3470648285897528123, guid: 34beed55efda1814ab41f8fbcc367867, type: 3}
+  floor: {fileID: 3446656178546075052}

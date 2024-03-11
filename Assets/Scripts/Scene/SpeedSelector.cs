@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class SpeedSelector : MonoBehaviour
 {
     public LevelPreferences levelPrefs;
-    [SerializeField] float additionalSpeed;
     [SerializeField] EnemyMove movingEnemy;
     [SerializeField] ObjectMoveScript movingObject;
     int buildIndex;
