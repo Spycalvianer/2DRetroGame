@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: AlcoholBottle
   m_EditorClassIdentifier: 
   damagePoints: 0
-  gainedPoints: 5
+  gainedPoints: 10
+  healthPoints: 0

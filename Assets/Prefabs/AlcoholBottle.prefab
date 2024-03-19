@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc07a4b2a9f33b742970e3ac80132c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingSpeed: 6
+  movingSpeed: 4
   timeToDestroy: 5
 --- !u!114 &2638317399988995295
 MonoBehaviour:
@@ -134,7 +134,7 @@ AudioSource:
   m_GameObject: {fileID: 1073280769258316981}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5078751416912530953, guid: bd909fa675621de429d5da9a4c7d9625, type: 2}
   m_audioClip: {fileID: 8300000, guid: 8e54fd1d9e2079c418ba72880bdfa579, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

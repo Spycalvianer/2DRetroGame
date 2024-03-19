@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class EnemySpawn : MonoBehaviour
 {
     Vector3 areaRight;
@@ -15,7 +14,7 @@ public class EnemySpawn : MonoBehaviour
     {
         while (true)
         {
-            timeBetweenSpawning = Random.Range(1, 6);
+            timeBetweenSpawning = Random.Range(1, 6) - SceneManager.GetActiveScene().buildIndex/2;
             yield return new WaitForSeconds(timeBetweenSpawning);
             InstantiateEnemies();
         }

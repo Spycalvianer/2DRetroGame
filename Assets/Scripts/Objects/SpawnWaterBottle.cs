@@ -10,7 +10,7 @@ public class SpawnWaterBottle : MonoBehaviour
     {
         while (true)
         {
-            timeBetweenSpawning = Random.Range(1,6);
+            timeBetweenSpawning = Random.Range(1,4);
             yield return new WaitForSeconds(timeBetweenSpawning);
             Instantiatebottles();
         }

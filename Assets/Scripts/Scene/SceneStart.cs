@@ -9,6 +9,7 @@ public class SceneStart : MonoBehaviour
     [SerializeField] BuildingScript[] buildings;
     [SerializeField] AudioSource music;
     [SerializeField] ObjectMoveScript balconyMoving;
+    float startingBuildingSpeed;
     void Start()
     {
         Time.timeScale = 1;
@@ -17,7 +18,10 @@ public class SceneStart : MonoBehaviour
         if(gamemanager != null) gamemanager.SetActive(false);
         LevelStart();
         buildings = FindObjectsOfType<BuildingScript>();
-        
+        for (int i = 0; i<buildings.Length; i++)
+        {
+            startingBuildingSpeed = buildings[i].buildingMovingSpeed;
+        }
         for (int i = 0; i < buildings.Length; i++)
         {
             buildings[i].buildingMovingSpeed = 0;
@@ -46,7 +50,7 @@ public class SceneStart : MonoBehaviour
 
         for (int i = 0; i < buildings.Length; i++)
         {
-            buildings[i].buildingMovingSpeed = 4f;
+            buildings[i].buildingMovingSpeed = startingBuildingSpeed;
         }
         music.Play();
     }
