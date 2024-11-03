@@ -17,6 +17,13 @@ public class PlayerInput : MonoBehaviour
 
     Camera mainCamera;
     [SerializeField] GameObject pausePanel;
+    private void Update()
+    {
+        GetInput();
+        Movement();
+        CalculateBounds();
+        ApplyBounds();
+    }
     public void GetInput()
     {
         xAxis = Input.GetAxis("Horizontal");

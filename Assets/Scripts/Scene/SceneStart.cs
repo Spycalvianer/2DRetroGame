@@ -4,7 +4,6 @@ using UnityEngine;
 public class SceneStart : MonoBehaviour
 {
     [SerializeField] Animator playerAnimator;
-    bool jumpInpput;
     [SerializeField] GameObject gamemanager;
     [SerializeField] BuildingScript[] buildings;
     [SerializeField] AudioSource music;
@@ -29,12 +28,21 @@ public class SceneStart : MonoBehaviour
     }
     private void Update()
     {
-        GetInputToJump();
+        //GetInputToJump();
+        InputToJumpPC();
+    }
+    void InputToJumpPC()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            playerAnimator.SetTrigger("Jump");
+            gamemanager.SetActive(true);
+        }
     }
     void GetInputToJump()
     {
-        jumpInpput = Input.GetButtonDown("Jump");
-        if (jumpInpput)
+        Touch jumpInput = Input.GetTouch(0);
+        if (jumpInput.phase == TouchPhase.Began)
         {
             playerAnimator.SetTrigger("Jump");
             gamemanager.SetActive(true);

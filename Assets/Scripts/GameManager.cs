@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    PlayerInput playerInput;
-    CGPBoundsScript boundScript;
+    public CGPBoundsScript boundScript;
     SpawnClouds objectSpawned;
     SpawnAlcoholBottle alcoholBottleSpawn;
     SpawnWaterBottle waterBottleSpawn;
-    UIHeight height;
+    public UIHeight height;
     public SpawnPool pool;
-    UIUpdater updateUI;
-    MovingFloor movingFloor;
+    public UIUpdater updateUI;
+    public MovingFloor movingFloor;
     EnemySpawn enemySpawning;
-    PlayerData data;
+    public PlayerData data;
     private void Start()
     {
-        playerInput = FindObjectOfType<PlayerInput>();
-        boundScript = FindObjectOfType<CGPBoundsScript>();
         boundScript.GetCameraBounds();
         objectSpawned = GetComponent<SpawnClouds>();
         StartCoroutine(objectSpawned.TimerForSpawning());
@@ -26,23 +23,16 @@ public class GameManager : MonoBehaviour
         StartCoroutine(alcoholBottleSpawn.TimerForSpawning());
         waterBottleSpawn = GetComponent<SpawnWaterBottle>();
         StartCoroutine(waterBottleSpawn.TimerForSpawning());
-        height = FindObjectOfType<UIHeight>();
         height.makePoolAppear += pool.PoolSpawn;
         height.StartingPosition();
-        updateUI = FindObjectOfType<UIUpdater>();
         movingFloor = FindObjectOfType<MovingFloor>();
         enemySpawning = GetComponent<EnemySpawn>();
         StartCoroutine(enemySpawning.TimeForSpawning());
-        data = FindObjectOfType<PlayerData>();
         data.SetStartingHealth();
         
     }
     void Update()
     {
-        playerInput.GetInput();
-        playerInput.OpenPauseMenu();
-        playerInput.TimescaleController();
-        playerInput.Movement();
         boundScript.ApplyBounds();
         height.HeightMeassure();
         height.ConditionToSpawnPool();

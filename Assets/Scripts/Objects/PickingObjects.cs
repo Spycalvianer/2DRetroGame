@@ -5,16 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class PickingObjects : MonoBehaviour
 {
+    PickUpScore pikupscore;
+    [SerializeField] GameObject pickUpTextGO;
     public PickableObjects bottleScore;
     PlayerData playerDayta;
-    [SerializeField] float scoreMultiplier;
+    public float scoreToAdd;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
             playerDayta = collision.GetComponent<PlayerData>();
-            playerDayta.score += (bottleScore.gainedPoints - bottleScore.damagePoints) * SceneManager.GetActiveScene().buildIndex;
+            scoreToAdd = (bottleScore.gainedPoints - bottleScore.damagePoints) * SceneManager.GetActiveScene().buildIndex;
+            playerDayta.score += scoreToAdd;
             playerDayta.UpdateHealth(-bottleScore.healthPoints);
+            Instantiate(pickUpTextGO, transform.position, Quaternion.identity);
+            pikupscore = FindObjectOfType<PickUpScore>();
+            pikupscore.ShowScore(scoreToAdd);
             Destroy(gameObject);
         }
     }

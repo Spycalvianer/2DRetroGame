@@ -5,7 +5,6 @@ using UnityEngine;
 public class BuildingScript : MonoBehaviour
 {
     public float buildingMovingSpeed;
-
     [SerializeField] Transform target;
     [SerializeField] Transform spawner;
     private void Update()

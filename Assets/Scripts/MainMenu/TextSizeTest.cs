@@ -8,6 +8,7 @@ public class TextSizeTest : MonoBehaviour
     public int multiplier;
     private void Update()
     {
-        text.fontSize = (Screen.width - Screen.height)/multiplier;
+        if (Screen.width > Screen.height) text.fontSize = (Screen.width - Screen.height) / multiplier;
+        else text.fontSize = (Screen.height - Screen.width)/multiplier;
     }
 }

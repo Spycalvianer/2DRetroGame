@@ -18,7 +18,7 @@ public class SpeedSelector : MonoBehaviour
         {
             if (movingEnemy != null)
             {
-                movingEnemy.movingSpeed = 5f + (SceneManager.GetActiveScene().buildIndex * 2);
+                movingEnemy.movingSpeed = 3f + (SceneManager.GetActiveScene().buildIndex * 2);
                 movingEnemy.timeToDestroy = 5f;
             }
             else if (movingObject != null)
