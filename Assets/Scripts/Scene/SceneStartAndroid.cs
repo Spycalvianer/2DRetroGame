@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SceneStartAndroid : MonoBehaviour
 {
-    Animator playerAnimator;
-    GameObject gamemanager;
+    public Animator playerAnimator;
+    public GameObject gamemanager;
     private void Update()
     {
         SceneStart();
