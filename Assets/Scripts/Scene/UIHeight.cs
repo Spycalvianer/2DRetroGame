@@ -13,9 +13,10 @@ public class UIHeight : MonoBehaviour
     public Image fallingImage;
     public float YStart;
     public float fallingImageOffset;
+    public float fallingSpeedRatio = 0.01f;
     public void HeightMeassure()
     {
-        filledImage.fillAmount -= Time.deltaTime * defillingSpeed;
+        filledImage.fillAmount -= Time.deltaTime * defillingSpeed * fallingSpeedRatio;
     }
     public void ConditionToSpawnPool()
     {

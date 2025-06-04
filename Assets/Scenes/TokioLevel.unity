@@ -215,7 +215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22982667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18, y: 0, z: 0}
+  m_LocalPosition: {x: -8.39, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1318,7 +1318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589681052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: 1.06, z: 0}
+  m_LocalPosition: {x: -6.87, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2003,7 +2003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4468967526723215839, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.22
+      value: -12.32
       objectReference: {fileID: 0}
     - target: {fileID: 4468967526723215839, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2402,7 +2402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994710248}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.22, y: 8.44, z: -0.00439805}
+  m_LocalPosition: {x: -12.32, y: 8.44, z: -0.00439805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2677,7 +2677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069535323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.22, y: -21.150742, z: -0.12699045}
+  m_LocalPosition: {x: -12.32, y: -21.150742, z: -0.12699045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3197,7 +3197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1448666353
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3895,11 +3895,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   filledImage: {fileID: 1598336323}
-  defillingSpeed: 0.01
+  defillingSpeed: 1
   spawnPool: 0
   fallingImage: {fileID: 682063761}
   YStart: 0
   fallingImageOffset: 40
+  fallingSpeedRatio: 0.01
 --- !u!114 &1598336323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3913,14 +3914,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 657fdd538f4261442accc15e9bc75b40, type: 3}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4936,7 +4937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4468967526723215839, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.22
+      value: -12.32
       objectReference: {fileID: 0}
     - target: {fileID: 4468967526723215839, guid: 12b11a9321f3cec44b3596654b6fa6db, type: 3}
       propertyPath: m_LocalPosition.y

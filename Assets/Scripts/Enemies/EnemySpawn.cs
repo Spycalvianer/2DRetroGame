@@ -14,7 +14,7 @@ public class EnemySpawn : MonoBehaviour
     {
         while (true)
         {
-            timeBetweenSpawning = Random.Range(1, 6) - SceneManager.GetActiveScene().buildIndex/2;
+            timeBetweenSpawning = Random.Range(1, 6);
             yield return new WaitForSeconds(timeBetweenSpawning);
             InstantiateEnemies();
         }

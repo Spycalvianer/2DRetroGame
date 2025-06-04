@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TokioLevel.unity
     guid: 1bc3c96c06be26f4d8c46e313a5c0b6f
   - enabled: 1
+    path: Assets/Scenes/EE.UU..unity
+    guid: 454c5d0a929558e459dfa892a918539a
+  - enabled: 1
     path: Assets/Scenes/E.IslandLevel.unity
     guid: 8dadc230f9505334ba5a3253a3c84082
   - enabled: 1
