@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         height.StartingPosition();
         movingFloor = FindObjectOfType<MovingFloor>();
         enemySpawning = GetComponent<EnemySpawn>();
-        StartCoroutine(enemySpawning.TimeForSpawning());
+        if(enemySpawning != null) StartCoroutine(enemySpawning.TimeForSpawning());
         data.SetStartingHealth();
         
     }
