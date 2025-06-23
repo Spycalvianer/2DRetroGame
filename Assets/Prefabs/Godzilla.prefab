@@ -188,7 +188,6 @@ GameObject:
   - component: {fileID: 5366132081154095264}
   - component: {fileID: 489475310929051200}
   - component: {fileID: 3821733281585590394}
-  - component: {fileID: 2777396566918720403}
   m_Layer: 0
   m_Name: Godzilla
   m_TagString: Untagged
@@ -298,19 +297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48b7c34f1c4f124c931b192553517e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2777396566918720403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798506412107220967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a275e91e529103d42aef4dfdd0f99c2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  godzillaGO: {fileID: 1798506412107220967}
 --- !u!1 &3123953754230730516
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +308,7 @@ GameObject:
   - component: {fileID: 7813541462479789039}
   - component: {fileID: 2799544323761245860}
   - component: {fileID: 4767752283973132320}
+  - component: {fileID: 3691798387283277607}
   m_Layer: 0
   m_Name: F8
   m_TagString: Untagged
@@ -425,7 +412,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -441,6 +428,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18, y: 5}
   m_EdgeRadius: 0
+--- !u!114 &3691798387283277607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3123953754230730516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d18ef8d2ec2d74da332f39d4953414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 60
+  crashObjet: {fileID: 3879524157241407914, guid: 20748054ab25c0a4d96ae7a9f08c0f60, type: 3}
 --- !u!1 &4576393190210966821
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +453,7 @@ GameObject:
   - component: {fileID: 1889908973927312504}
   - component: {fileID: 2450542649719921237}
   - component: {fileID: 7327082672638017529}
+  - component: {fileID: 8477556145101287256}
   m_Layer: 0
   m_Name: F6
   m_TagString: Untagged
@@ -571,6 +573,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8477556145101287256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4576393190210966821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d18ef8d2ec2d74da332f39d4953414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 60
+  crashObjet: {fileID: 3879524157241407914, guid: 20748054ab25c0a4d96ae7a9f08c0f60, type: 3}
 --- !u!1 &4845877920316554054
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +850,7 @@ GameObject:
   - component: {fileID: 606007415198577112}
   - component: {fileID: 7556318478496248288}
   - component: {fileID: 7136676882941668551}
+  - component: {fileID: 6526946142121403858}
   m_Layer: 0
   m_Name: F7
   m_TagString: Untagged
@@ -953,6 +970,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18, y: 3.25}
   m_EdgeRadius: 0
+--- !u!114 &6526946142121403858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891249909121370465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d18ef8d2ec2d74da332f39d4953414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 60
+  crashObjet: {fileID: 3879524157241407914, guid: 20748054ab25c0a4d96ae7a9f08c0f60, type: 3}
 --- !u!1 &8290033973780907061
 GameObject:
   m_ObjectHideFlags: 0

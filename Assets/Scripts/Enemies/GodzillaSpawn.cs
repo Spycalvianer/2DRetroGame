@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GodzillaSpawn : MonoBehaviour
 {
+    float timerForSpawning;
     Vector3 areaLeft, areaRight;
     public GameObject godzillaGO;
     int areaSelector;
@@ -11,27 +12,40 @@ public class GodzillaSpawn : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(TimerForGodzilla());
+    }
+    IEnumerator TimerForGodzilla()
+    {
+        while (true)
+        {
+            timerForSpawning = Random.Range(6, 12);
+            yield return new WaitForSeconds(timerForSpawning);
+            InstantiateGodzilla();
+        }
+    }
+    public void DefineAreas()
+    {
         areaLeft = new Vector3(-13, Random.Range(4, -4), 0);
         areaRight = new Vector3(15, Random.Range(4, -4), 0);
     }
-    public void SelectAreaToSpawnAndInstantiate()
+    public void SelectAreaToSpawn()
     {
         areaSelector = Random.Range(1, 3);
         if (areaSelector == 1)
         {
             areaToSpawn = areaLeft;
-            InstantiateGodzilla();
             godzillaGO.transform.localScale = new Vector3(1, 1, 1);
         }
         else if (areaSelector == 2)
         {
             areaToSpawn = areaRight;
-            InstantiateGodzilla();
             godzillaGO.transform.localScale = new Vector3(-1, 1, 1);
         }
     }
     public void InstantiateGodzilla()
     {
+        DefineAreas();
+        SelectAreaToSpawn();
         Instantiate(godzillaGO, areaToSpawn, Quaternion.identity);
     }
 }
