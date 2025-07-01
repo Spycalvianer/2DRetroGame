@@ -9,6 +9,7 @@ public class GodzillaSpawn : MonoBehaviour
     public GameObject godzillaGO;
     int areaSelector;
     Vector3 areaToSpawn;
+    [SerializeField] Animation godzillaAnim;
 
     private void Start()
     {
@@ -25,8 +26,8 @@ public class GodzillaSpawn : MonoBehaviour
     }
     public void DefineAreas()
     {
-        areaLeft = new Vector3(-13, Random.Range(4, -4), 0);
-        areaRight = new Vector3(15, Random.Range(4, -4), 0);
+        areaLeft = new Vector3(-20, Random.Range(-4, -8), 0);
+        areaRight = new Vector3(20, Random.Range(-4, -8), 0);
     }
     public void SelectAreaToSpawn()
     {
@@ -47,5 +48,6 @@ public class GodzillaSpawn : MonoBehaviour
         DefineAreas();
         SelectAreaToSpawn();
         Instantiate(godzillaGO, areaToSpawn, Quaternion.identity);
+        godzillaAnim.Play();
     }
 }
