@@ -3895,7 +3895,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   godzillaGO: {fileID: 1798506412107220967, guid: c8c0d65309b290f4faf19309b3e9acf0, type: 3}
-  godzillaAnim: {fileID: 2379249859047071983, guid: c8c0d65309b290f4faf19309b3e9acf0, type: 3}
 --- !u!1 &1949696176
 GameObject:
   m_ObjectHideFlags: 0

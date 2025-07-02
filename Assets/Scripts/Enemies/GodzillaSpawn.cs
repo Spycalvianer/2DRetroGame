@@ -9,8 +9,6 @@ public class GodzillaSpawn : MonoBehaviour
     public GameObject godzillaGO;
     int areaSelector;
     Vector3 areaToSpawn;
-    [SerializeField] Animation godzillaAnim;
-
     private void Start()
     {
         StartCoroutine(TimerForGodzilla());
@@ -48,6 +46,5 @@ public class GodzillaSpawn : MonoBehaviour
         DefineAreas();
         SelectAreaToSpawn();
         Instantiate(godzillaGO, areaToSpawn, Quaternion.identity);
-        godzillaAnim.Play();
     }
 }
