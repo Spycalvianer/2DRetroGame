@@ -186,7 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3609953625669475642}
   - component: {fileID: 5366132081154095264}
-  - component: {fileID: 2388585683063898025}
+  - component: {fileID: 4976860964765258481}
   m_Layer: 0
   m_Name: Godzilla
   m_TagString: Untagged
@@ -203,7 +203,7 @@ Transform:
   m_GameObject: {fileID: 1798506412107220967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -27.47, y: -4.99, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1095251866281264654}
@@ -262,7 +262,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2388585683063898025
+--- !u!114 &4976860964765258481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -271,10 +271,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1798506412107220967}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35808d5d4b80f7542866420874962eb4, type: 3}
+  m_Script: {fileID: 11500000, guid: b48b7c34f1c4f124c931b192553517e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  godzillaAnim: {fileID: 0}
 --- !u!1 &3123953754230730516
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,6 +743,7 @@ GameObject:
   - component: {fileID: 1095251866281264654}
   - component: {fileID: 4594450872804101371}
   - component: {fileID: 9199170039155502540}
+  - component: {fileID: 3859603583512457297}
   m_Layer: 0
   m_Name: GodzillaMouthSprite
   m_TagString: Untagged
@@ -840,6 +840,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3859603583512457297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6695897470991438033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9fb70e62ab2704f85c791c1d858c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 1798506412107220967}
 --- !u!1 &7891249909121370465
 GameObject:
   m_ObjectHideFlags: 0
