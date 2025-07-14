@@ -28,8 +28,8 @@ public class SceneStart : MonoBehaviour
     }
     private void Update()
     {
-        GetInputToJump();
-        //InputToJumpPC();
+        //GetInputToJump();
+        InputToJumpPC();
     }
     void InputToJumpPC()
     {
