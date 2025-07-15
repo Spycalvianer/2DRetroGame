@@ -3754,10 +3754,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1942499669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a391fdef02047e841829997b8aaecdf8, type: 3}
+  m_Script: {fileID: 11500000, guid: f98041c0e0b63be479a6eb78b7a3254f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 932587292634824789, guid: 7696a9856a5c144498716fd3c25ecb16, type: 3}
+  enemies:
+  - {fileID: 932587292634824789, guid: 7696a9856a5c144498716fd3c25ecb16, type: 3}
+  - {fileID: 8904924521294146852, guid: 95c2ea233f5db244cae6d9bacd8669ed, type: 3}
+  - {fileID: 2237318627588361863, guid: b5880f560121eb2499b1f5403a1a5604, type: 3}
+  - {fileID: 1798506412107220967, guid: c8c0d65309b290f4faf19309b3e9acf0, type: 3}
 --- !u!1 &1949339249
 GameObject:
   m_ObjectHideFlags: 0

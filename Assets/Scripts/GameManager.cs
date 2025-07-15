@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public MovingFloor movingFloor;
     EnemySpawn enemySpawning;
     public PlayerData data;
+    SpawnMultipleEnemies multipleEnemiesVar;
     private void Start()
     {
         boundScript.GetCameraBounds();
@@ -29,6 +30,8 @@ public class GameManager : MonoBehaviour
         enemySpawning = GetComponent<EnemySpawn>();
         if(enemySpawning != null) StartCoroutine(enemySpawning.TimeForSpawning());
         data.SetStartingHealth();
+        multipleEnemiesVar = GetComponent<SpawnMultipleEnemies>();
+        if (multipleEnemiesVar != null) StartCoroutine(multipleEnemiesVar.EnemyTimer());
         
     }
     void Update()
