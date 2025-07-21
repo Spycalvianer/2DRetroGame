@@ -15,7 +15,7 @@ public class SpawnMultipleEnemies : MonoBehaviour
     {
         while (true)
         {
-            timerToSpawn = Random.Range(3, 8);
+            timerToSpawn = Random.Range(3, 6);
             yield return new WaitForSeconds(timerToSpawn);
             InstantiateEnemiesArray();
         }

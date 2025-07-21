@@ -2800,7 +2800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   filledImage: {fileID: 1598336323}
-  defillingSpeed: 1
+  defillingSpeed: 0.5
   spawnPool: 0
   fallingImage: {fileID: 682063761}
   YStart: 0

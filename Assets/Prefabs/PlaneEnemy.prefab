@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -3727646800089256245}
   - component: {fileID: 1464813352042178372}
   - component: {fileID: 1604839420297674565}
-  - component: {fileID: -983160213765553388}
+  - component: {fileID: 7445748701255895550}
   m_Layer: 8
   m_Name: PlaneEnemy
   m_TagString: Enemy
@@ -109,21 +109,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &-983160213765553388
+--- !u!114 &7445748701255895550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932587292634824789}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef7508f9bf1a71e4191b088e50861580, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bf9a035ef31ff242a7f0b25442a8f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelPrefs: {fileID: 11400000, guid: 9cd9922e1e13237409cba3fbe944ee7d, type: 2}
-  movingEnemy: {fileID: 0}
-  movingObject: {fileID: 0}
+  bombObj: {fileID: 5005289890987767333, guid: e241cd742fadaaa4db613ac329692361, type: 3}
 --- !u!1 &6298242029097175818
 GameObject:
   m_ObjectHideFlags: 0
